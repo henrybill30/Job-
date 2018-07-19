@@ -1,0 +1,93 @@
+/**index.wxss**/
+@import "/wxSearch/wxSearch.wxss";
+.recommend{
+  width: 100%;
+}
+
+.classes{
+  display: flex;
+  flex-direction: row;
+  width: 820rpx;
+  height: 160rpx;
+  margin-top: 20px;
+}
+.class{
+  height: 130rpx;
+  width: 130rpx;
+  margin-left: 45px;
+}
+
+.new{
+  display:flex;
+  margin-top: 0px;
+}
+.line1{
+   width: 150px;
+   height: 1px;
+   margin: 10px auto;
+   background: linear-gradient(to right,black,white);
+   margin-top: 11px;
+   margin-left: 0px;
+}
+.word{
+  font-size: 15px;
+  margin-top: 0px;
+}
+.line2{
+   width: 150px;
+   height: 1px;
+   margin: 10px auto;
+   background: linear-gradient(to right,white,black);
+   margin-top: 11px;
+   margin-right: 0px;
+}
+
+.advertise{
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.adver{
+  display: block;
+  margin-top: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 30px #cccccc;
+  height: 480rpx;
+  width: 680rpx;
+}
+.adv_image{
+  width: 650rpx;
+  height: 400rpx;
+  margin-top: 8rpx;
+  margin-left: 14rpx;
+}
+.adv_info{
+  display: flex;
+}
+.adv{
+  height: 65rpx;
+  width: 680rpx;
+  margin-top: 2px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.view_image{
+  width: 55rpx;
+  height: 40rpx;
+  margin-top: 8rpx;
+}
+.views{
+  font-size: 18px;
+  margin-right: 10rpx;
+}
+.like_image{
+  width: 60rpx;
+  height: 50rpx;
+  margin-right:0rpx; 
+}
+.likes{
+  font-size: 18px;
+  margin-right: 25rpx;
+}
+

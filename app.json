@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/allclasses/Enterprise/Enterprise",
+    "pages/allclasses/Shixi/Shixi",
+    "pages/allclasses/Partwork/Partwork",
+    "pages/company/thoughtworks/thoughtworks",
+    "pages/company/thoughtworks/map/map",
+    "pages/company/jingdong/jingdong",
+    "pages/company/jingdong/map/map",
+    "pages/company/rencai/rencai",
+    "pages/company/rencai/map/map",
+    "pages/company/shujia/shujia",
+    "pages/company/shujia/map/map",
+    "pages/company/gaoweida/gaoweida",
+    "pages/company/gaoweida/map/map",
+    "pages/company/qisike/qisike",
+    "pages/company/qisike/map/map",
+    "pages/company/starbucks/starbucks",
+    "pages/company/starbucks/map/map",
+    "pages/company/MacDonald/MacDonald",
+    "pages/company/MacDonald/map/map",
+    "pages/company/costa/costa",
+    "pages/company/costa/map/map"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Job愁",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  }
+}

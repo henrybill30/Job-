@@ -1,0 +1,13 @@
+<!--pages/allbiz/allbiz.wxml-->
+<view class="allbiz">
+  <block wx:for="{{bizinfo}}">
+    <view class="biz" bindtap="allbiz" data-id="{{item.id}}">
+      <image class="image" src="{{item.big_image}}"></image>
+      <view class="info">
+        <text class="info1">{{item.ch_name}}</text>
+        <view class="line"></view>
+        <text class="info2">{{item.ch_shot_info}}</text>
+      </view>
+    </view>
+  </block>
+</view> 

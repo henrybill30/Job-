@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<import src="/wxSearch/wxSearch.wxml"/>
+<view class="wxSearch-section">
+  <view class="wxSearch-pancel">
+    <input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索" />
+    <button class="wxSearch-button" bindtap="wxSearchFn" size="mini" plain="true">搜索</button>
+  </view>
+</view>
+<template is="wxSearch" data="{{wxSearchData}}"/>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" style="height:450rpx">
+  <block wx:for="{{bizinfo}}">
+    <swiper-item>
+      <image class="recommend" src="{{item.image}}" bindtap="toast" data-id='{{item.id}}'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<scroll-view class="allclasses" scroll-x>
+  <view class="classes">
+    <block wx:for="{{content}}">
+      <image class="class" src="{{item.ch_image}}" bindtap="allbiz" data-id="{{item.id}}"></image>
+    </block>
+  </view>
+</scroll-view>
+
+<view class="new">
+  <view class="line1"></view>
+  <view class="word">最新资讯</view>
+  <view class="line2"></view>
+</view>
+
+<view class="advertise">
+  <block wx:for="{{info}}" wx:key="{{index}}">
+    <view class="adver">
+      <image class="adv_image" src="{{item.image}}" bindtap='onClick' data-id='{{index+1}}'></image>
+      <view class="adv_info">
+        <view class="adv" bindtap="onClick" data-id='{{index+1}}'>{{item.ch_name}}</view>
+        <image class="view_image" src="/images/view.jpg"></image>
+        <text class="views">{{item.view}}</text>
+        <image class="like_image" src="/images/like.jpg" bindtap='like' data-id="{{index+1}}"></image>
+        <text class="likes" bindtap='like'>{{item.like}}</text>
+      </view>
+    </view>
+  </block>
+</view> 
+
+<!-- <view class="advertise">
+  <block wx:for="{{info}}" wx:key="{{index}}">
+    <view class="good" style="background-image: url('{{item.image}}')" bindtap='onClick' data-id='{{index+1}}'>
+      <view class="adv" bindtap="toast" >{{item.ch_title}}</view>
+      <image class="view_image" src="/images/view.jpg"></image>
+      <text class="views" >{{item.views}}</text>
+      <image class="like_image" src="/images/like.jpg" bindtap='like' data-id="{{index+1}}"></image>
+      <text class="likes" bindtap='like'>{{item.likes}}</text>
+    </view>
+  </block>
+</view>  -->

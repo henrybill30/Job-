@@ -1,0 +1,3 @@
+<!--pages/company/rencai/map/map.wxml-->
+<map id="map" longitude="{{info[0].longitude}}" latitude="{{info[0].latitude}}"  markers="{{info[0].markers}}" show-location style="width: 100%; height: 500px;"></map>
+<text class='phone' bindtap='actioncnt'>联络方式</text>

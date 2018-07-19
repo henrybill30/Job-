@@ -1,0 +1,14 @@
+<!--pages/company/thoughtworks/thoughtworks.wxml-->
+<image class="company_image" src="{{info[0].big_image}}"></image>
+<view class="info" wx:for="{{info[0].work}}" wx:key="{{index}}">
+  <text class="word">{{item.name}}</text>
+  <view class='select_box'>
+    <view class="option_box" style='height:{{item.show?(item.info.length>5?260:item.info.length):0}}rpx;'>
+      <text class='option' catchtap='selectTap' data-id="{{index+1}}">{{item.info}}</text>
+    </view>
+    <view class='select' catchtap='selectTap' data-id="{{index+1}}">
+        <image class='select_img {{item.show&&"select_img_rotate"}}' src="{{img}}"></image>      
+    </view>
+  </view>
+</view>
+<button class="phone" bindtap='onContact'>联系我们</button>
